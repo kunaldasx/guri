@@ -1,6 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
 import Logo from "../assets/images/logo2.png";
-import { ArrowUpRight } from "lucide-react";
 import { JoinButton } from "./ui/JoinBtn";
 import { PartnerButton } from "./ui/PartnerBtn";
 
@@ -100,7 +99,7 @@ export default function Navbar() {
 
 			{/* Mobile Navigation */}
 			<div
-				className={`w-[calc(100%-32px)] max-w-295 overflow-hidden rounded-[22px] border backdrop-blur-3xl backdrop-saturate-[1.8] transition-[max-height,padding,margin-top,background-color,border-color,box-shadow] duration-320 ease-guri min-[940px]:hidden
+				className={`w-full max-w-295 overflow-hidden rounded-[22px] border backdrop-blur-3xl backdrop-saturate-[1.8] transition-[max-height,padding,margin-top,background-color,border-color,box-shadow] duration-320 ease-guri min-[940px]:hidden
 					${
 						mobileOpen
 							? scrolled
@@ -124,13 +123,8 @@ export default function Navbar() {
 				</ul>
 
 				<div className="flex flex-col gap-2">
-					<a href="#partner" className="btn btn-ghost justify-center">
-						Become a Partner <ArrowUpRight />
-					</a>
-
-					<a href="#waitlist" className="btn btn-solid justify-center">
-						Join waiting list <ArrowUpRight />
-					</a>
+					<PartnerButton size="sm" />
+					<JoinButton size="sm" />
 				</div>
 			</div>
 		</header>

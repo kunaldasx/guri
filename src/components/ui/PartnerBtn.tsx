@@ -14,23 +14,22 @@ export function PartnerButton({ size = "md" }: { size?: ButtonSize }) {
 		<a
 			href="#"
 			className={cn(
-				"group inline-flex items-center gap-1.5 whitespace-nowrap rounded-full",
+				"max-sm:w-full group inline-flex justify-center items-center gap-1.5 whitespace-nowrap rounded-full",
 				"font-semibold no-underline text-[#101c19]",
 
 				// Glass surface
-				"border border-white/60",
-				"bg-[linear-gradient(135deg,rgba(255,255,255,0.92),rgba(246,247,245,0.78))]",
-				"backdrop-blur-[16px] backdrop-saturate-150",
+				"border border-black/8",
+				"bg-[linear-gradient(135deg,rgba(255,255,255,0.96),rgba(239,242,240,0.88))]",
+				"backdrop-blur-lg backdrop-saturate-150",
 
-				// Subtle glass depth
-				"shadow-[inset_0_1px_0_rgba(255,255,255,0.95),inset_0_-1px_0_rgba(0,0,0,0.04),0_2px_8px_rgba(0,0,0,0.04)]",
+				// Glass depth
+				"shadow-[inset_0_1px_0_rgba(255,255,255,1),inset_0_-1px_0_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.08),0_12px_30px_rgba(0,0,0,0.06)]",
 
-				// Smooth interaction
-				"transition-all duration-300 ease-out",
+				// Hover
 				"hover:-translate-y-0.5",
-				"hover:border-white/80",
-				"hover:bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(242,244,242,0.88))]",
-				"hover:shadow-[inset_0_1px_0_rgba(255,255,255,1),inset_0_-1px_0_rgba(0,0,0,0.04),0_8px_22px_rgba(0,0,0,0.08)]",
+				"hover:border-white",
+				"hover:bg-[linear-gradient(135deg,rgba(255,255,255,0.99),rgba(235,239,237,0.94))]",
+				"hover:shadow-[inset_0_1px_0_rgba(255,255,255,1),inset_0_-1px_0_rgba(0,0,0,0.07),0_8px_20px_rgba(0,0,0,0.10),0_16px_35px_rgba(0,0,0,0.07)]",
 
 				// Press
 				"active:translate-y-0 active:scale-[0.98]",

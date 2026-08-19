@@ -225,7 +225,7 @@ const FEATURES: FeatureItem[] = [
 const PropertyDashboardHero: React.FC = () => {
 	return (
 		<section
-			className="relative isolate overflow-hidden bg-cream px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-28 xl:py-32"
+			className="relative isolate overflow-hidden bg-cream px-6 py-16 sm:px-10 sm:py-18 lg:px-16 lg:py-20 xl:py-24"
 			aria-label="Property dashboard preview"
 		>
 			{/* Ambient background gradient — near-flat cream base.
@@ -251,17 +251,17 @@ const PropertyDashboardHero: React.FC = () => {
 			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-[1fr_auto_1fr] lg:gap-10 xl:gap-14">
 				{/* ---------------------------- Left column ---------------------------- */}
 				<div className="animate-guri-rise order-1 max-w-xl text-left">
-					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
+					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[9px] sm:text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
 						<span className="h-1.5 w-1.5 rounded-full bg-[#1dd1a1]" />
 						Property dashboard preview
 					</span>
 
-					<h1 className="font-sans text-[2.5rem] leading-[1.12] font-semibold tracking-tight text-ink sm:text-5xl lg:text-[3.15rem]">
+					<h1 className="font-sans max-w-4xl text-[clamp(28px,5.6vw,60px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
 						Everything your <span className="text-teal-600">property team</span>{" "}
 						needs, in one place.
 					</h1>
 
-					<p className="mt-5 max-w-md text-[16px] leading-relaxed text-ink/60">
+					<p className="mt-5 max-w-md text-[15px] sm:text-[16px] leading-relaxed text-ink/60">
 						Track units, tenants, properties, leases, finance, and occupancy
 						from one simple dashboard.
 					</p>
@@ -269,7 +269,7 @@ const PropertyDashboardHero: React.FC = () => {
 
 				{/* --------------------------- Center: phone --------------------------- */}
 				<div className="animate-guri-rise-delayed order-2 flex justify-center">
-					<div className="group relative w-[210px] sm:w-[230px] lg:w-[250px]">
+					<div className="group relative w-52 sm:w-57 lg:w-62">
 						{/* Glow behind the phone — tinted to match the dashboard's own accent green */}
 						<div
 							aria-hidden="true"
@@ -286,7 +286,7 @@ const PropertyDashboardHero: React.FC = () => {
 						<img
 							src={Phone}
 							alt="Property dashboard preview shown on a smartphone: quick-action icons, an occupancy trend chart, and a 65% completion ring."
-							className="w-full select-none drop-shadow-[0_30px_70px_rgba(16,24,38,0.28)] transition-transform duration-700 ease-guri will-change-transform group-hover:-translate-y-2"
+							className="w-full select-none drop-shadow-[0_30px_70px_rgba(16,24,38,0.28)] transition-transform duration-700 ease-guri will-change-transform group-hover:-translate-y-0.5 group-hover:-translate-x-0.5"
 							draggable={false}
 						/>
 					</div>
@@ -303,7 +303,7 @@ const PropertyDashboardHero: React.FC = () => {
 							<span
 								key={item.label}
 								className={[
-									"inline-flex cursor-pointer items-center gap-1.5 rounded-full px-4 py-2 text-[13.5px] font-medium transition-all duration-[260ms] ease-guri",
+									"inline-flex cursor-pointer items-center gap-1.5 rounded-full px-4 py-2 text-xs sm:text-sm font-medium transition-all duration-[260ms] ease-guri",
 									i === 0
 										? "bg-[#171512] text-white shadow-[0_8px_18px_rgba(16,24,38,0.22)] hover:-translate-y-0.5 hover:shadow-[0_12px_22px_rgba(16,24,38,0.28)]"
 										: "bg-mint-200/50 text-ink/70 hover:-translate-y-0.5 hover:bg-mint-200/75 hover:text-ink",
@@ -316,7 +316,7 @@ const PropertyDashboardHero: React.FC = () => {
 					</nav>
 
 					{/* Feature checklist */}
-					<ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-[14.5px] text-ink/75 sm:gap-x-10">
+					<ul className="grid grid-cols-2 gap-x-8 gap-y-3 text-xs sm:text-sm text-ink/75 sm:gap-x-10">
 						{FEATURES.map((feature) => (
 							<li
 								key={feature.label}
@@ -335,7 +335,7 @@ const PropertyDashboardHero: React.FC = () => {
 						<a
 							href="#"
 							aria-label="Get it on Google Play"
-							className="inline-flex items-center gap-2.5 rounded-xl bg-[#171512] px-4 py-2.5 text-white shadow-[0_10px_26px_rgba(16,24,38,0.18)] transition-all duration-[260ms] ease-guri hover:-translate-y-0.5 hover:bg-[#050403] hover:shadow-[0_14px_32px_rgba(16,24,38,0.24)] active:translate-y-0"
+							className="max-sm:w-full inline-flex items-center justify-center gap-2.5 rounded-xl bg-[#171512] px-4 py-2.5 text-white shadow-play transition-all duration-260 ease-guri hover:-translate-y-0.5 hover:bg-[#050403] hover:shadow-play-hover active:translate-y-0"
 						>
 							<span className="rounded bg-white/95 p-0.5">
 								<IconGooglePlay />
@@ -351,7 +351,7 @@ const PropertyDashboardHero: React.FC = () => {
 						<a
 							href="#"
 							aria-label="Download on the App Store"
-							className="inline-flex items-center gap-2.5 rounded-xl bg-[#171512] px-4 py-2.5 text-white shadow-[0_10px_26px_rgba(16,24,38,0.18)] transition-all duration-[260ms] ease-guri hover:-translate-y-0.5 hover:bg-[#050403] hover:shadow-[0_14px_32px_rgba(16,24,38,0.24)] active:translate-y-0"
+							className="max-sm:w-full inline-flex items-center justify-center gap-2.5 rounded-xl bg-[#171512] px-4 py-2.5 text-white shadow-play transition-all duration-260 ease-guri hover:-translate-y-0.5 hover:bg-[#050403] hover:shadow-play-hover active:translate-y-0"
 						>
 							<IconApple />
 							<span className="flex flex-col leading-tight">

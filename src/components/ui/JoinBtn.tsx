@@ -14,7 +14,7 @@ export function JoinButton({ size = "md" }: { size?: ButtonSize }) {
 		<a
 			href="#"
 			className={cn(
-				"group inline-flex items-center gap-1.5 whitespace-nowrap rounded-full",
+				"max-sm:w-full group inline-flex justify-center items-center gap-1.5 whitespace-nowrap rounded-full",
 				"font-semibold no-underline text-white",
 
 				// Glass surface

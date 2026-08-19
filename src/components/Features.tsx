@@ -28,14 +28,14 @@ const features: Feature[] = [
 
 const FeaturesSection: React.FC = () => {
 	return (
-		<section className="py-20 sm:py-24 lg:py-28">
+		<section className="py-16 sm:py-18 lg:py-20">
 			<div className="mx-auto max-w-5xl px-6 text-center sm:px-8 lg:px-10">
-				<span className="inline-flex items-center gap-2 rounded-full bg-mint-200 px-4 py-1.5 text-[12.5px] font-semibold uppercase tracking-[0.09em] text-teal-700">
+				<span className="inline-flex items-center gap-2 rounded-full bg-mint-200 px-4 py-1.5 text-[9px] sm:text-xs font-semibold uppercase tracking-[0.09em] text-teal-700">
 					<span className="h-1.5 w-1.5 rounded-full bg-[#70e261]" />
 					Features
 				</span>
 
-				<h2 className="mt-6 font-sans text-[2rem] font-medium leading-[1.15] tracking-[-0.01em] text-ink sm:text-[2.75rem] lg:text-[3rem] lg:leading-[1.1]">
+				<h2 className="mt-6 max-w-4xl text-[clamp(28px,5.6vw,50px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
 					Everything your property team needs
 				</h2>
 
@@ -47,18 +47,17 @@ const FeaturesSection: React.FC = () => {
 					{features.map(({ icon: Icon, title, description }, i) => (
 						<div
 							key={title}
-							className="group rounded-2xl bg-mist p-6 transition-[transform,box-shadow,background-color] duration-300 ease-guri hover:-translate-y-1 hover:bg-white hover:shadow-[0_20px_40px_-20px_rgba(16,24,38,0.18)]"
+							className="group rounded-2xl bg-mist p-6 transition-[transform,box-shadow,background-color] duration-300 ease-guri hover:bg-[#efeeec]
+										hover:shadow-[0_18px_40px_-24px_rgba(16,24,38,0.25)]"
 							style={{ animationDelay: `${i * 60}ms` }}
 						>
-							<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-600 transition-transform duration-300 ease-guri group-hover:scale-105 group-hover:bg-teal-500">
+							<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-stat-gradient transition-transform duration-300 ease-guri group-hover:opacity-80">
 								<Icon className="h-5 w-5 text-mint-200" strokeWidth={2} />
 							</div>
 
-							<h3 className="mt-4 text-[17px] font-semibold text-ink">
-								{title}
-							</h3>
+							<h3 className="mt-4 text-base font-semibold text-ink">{title}</h3>
 
-							<p className="mt-2 text-[14.5px] leading-relaxed text-ink/55">
+							<p className="mt-2 text-sm leading-relaxed text-ink/55">
 								{description}
 							</p>
 						</div>

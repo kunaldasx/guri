@@ -81,24 +81,24 @@ const FaqSection: React.FC = () => {
 
 	return (
 		<section
-			className="relative bg-cream px-6 py-20 sm:px-10 sm:py-24 lg:px-16 lg:py-28"
+			className="relative bg-cream px-6 py-16 sm:px-10 sm:py-18 lg:px-16 lg:py-20"
 			aria-label="Frequently asked questions"
 		>
 			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-16">
 				{/* ------------------------------ Left column ------------------------------ */}
 				<div className="animate-guri-rise max-w-md">
-					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
+					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[9px] sm:text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
 						<span className="h-1.5 w-1.5 rounded-full bg-[#1dd1a1]" />
 						FAQs
 					</span>
 
-					<h2 className="font-sans text-[2.5rem] leading-[1.08] font-semibold tracking-tight text-ink sm:text-5xl">
+					<h2 className="font-sans max-w-4xl text-[clamp(28px,5.6vw,50px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
 						Frequently asked
 						<br />
 						<span className="text-teal-700">questions.</span>
 					</h2>
 
-					<p className="mt-5 max-w-sm text-[16px] leading-relaxed text-ink/60">
+					<p className="mt-5 max-w-sm text-[15px] sm:text-[16.5px] leading-relaxed text-ink/60">
 						Have something else on your mind? Email us at{" "}
 						<a
 							href="mailto:support@guri.liamsi.app"
@@ -129,7 +129,7 @@ const FaqSection: React.FC = () => {
 										aria-expanded={open}
 										aria-controls={panelId}
 										onClick={() => toggle(index)}
-										className="flex w-full items-center justify-between gap-6 px-6 py-5 text-left transition-colors duration-200 ease-guri hover:bg-mist/40 sm:px-7"
+										className="flex w-full items-center justify-between gap-6 px-6 py-4 sm:py-5 text-left transition-colors duration-200 ease-guri hover:bg-mist/40 sm:px-7"
 									>
 										<span
 											className={[
