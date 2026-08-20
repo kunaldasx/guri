@@ -86,7 +86,7 @@
 
 @layer components {
 	.btn {
-		@apply inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-5 py-3 text-[14.5px] font-semibold no-underline transition-[transform,box-shadow,background-color,color] duration-[260ms] ease-guri;
+		@apply inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-5 py-2.5 sm:py-3 text-[14.5px] font-semibold no-underline transition-[transform,box-shadow,background-color,color] duration-[260ms] ease-guri;
 	}
 
 	.btn-ghost {

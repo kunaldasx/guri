@@ -142,13 +142,14 @@ export default function Navbar() {
 			</nav>
 
 			{/* Mobile Navigation */}
+			{/* Mobile Navigation */}
 			<div
-				className={`relative w-full max-w-295 overflow-hidden rounded-[22px] border backdrop-blur-[28px] backdrop-saturate-[1.8] transition-[max-height,padding,margin-top,background-color,border-color,box-shadow] duration-320 ease-guri min-[940px]:hidden ${
+				className={`relative w-full max-w-295 overflow-hidden rounded-[22px] transition-[max-height,padding,margin-top,opacity,visibility,background-color,border-color,box-shadow] duration-320 ease-guri min-[940px]:hidden ${
 					mobileOpen
 						? scrolled
-							? "mt-2 max-h-105 border-white/45 bg-white/[0.10] p-3.5 shadow-[0_12px_40px_rgba(16,24,38,0.14),0_1px_0_rgba(255,255,255,0.75)_inset,0_-1px_0_rgba(16,24,38,0.05)_inset,inset_0_0_20px_rgba(255,255,255,0.05)]"
-							: "mt-2 max-h-105 border-white/50 bg-white/[0.08] p-3.5 shadow-[0_12px_40px_rgba(16,24,38,0.10),0_1px_0_rgba(255,255,255,0.8)_inset,0_-1px_0_rgba(16,24,38,0.04)_inset,inset_0_0_20px_rgba(255,255,255,0.05)]"
-						: "mt-0 max-h-0 border-transparent bg-transparent p-0 shadow-none"
+							? "visible mt-2 max-h-105 border border-white/45 bg-white/[0.10] p-3.5 opacity-100 shadow-[0_12px_40px_rgba(16,24,38,0.14),0_1px_0_rgba(255,255,255,0.75)_inset,0_-1px_0_rgba(16,24,38,0.05)_inset,inset_0_0_20px_rgba(255,255,255,0.05)] backdrop-blur-[28px] backdrop-saturate-[1.8]"
+							: "visible mt-2 max-h-105 border border-white/50 bg-white/[0.08] p-3.5 opacity-100 shadow-[0_12px_40px_rgba(16,24,38,0.10),0_1px_0_rgba(255,255,255,0.8)_inset,0_-1px_0_rgba(16,24,38,0.04)_inset,inset_0_0_20px_rgba(255,255,255,0.05)] backdrop-blur-[28px] backdrop-saturate-[1.8]"
+						: "invisible mt-0 max-h-0 border-0 bg-transparent p-0 opacity-0 shadow-none backdrop-blur-none backdrop-saturate-100 pointer-events-none"
 				}`}
 			>
 				{/* Mobile glass reflection */}

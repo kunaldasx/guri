@@ -30,16 +30,16 @@ const FeaturesSection: React.FC = () => {
 	return (
 		<section className="py-16 sm:py-18 lg:py-20">
 			<div className="mx-auto max-w-5xl px-6 text-center sm:px-8 lg:px-10">
-				<span className="inline-flex items-center gap-2 rounded-full bg-mint-200 px-4 py-1.5 text-[9px] sm:text-xs font-semibold uppercase tracking-[0.09em] text-teal-700">
+				<span className="inline-flex items-center gap-2 rounded-full bg-mint-200 px-4 py-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.09em] text-teal-700">
 					<span className="h-1.5 w-1.5 rounded-full bg-[#70e261]" />
 					Features
 				</span>
 
-				<h2 className="mt-6 max-w-4xl text-[clamp(28px,5.6vw,50px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
+				<h2 className="mt-6 max-w-4xl text-[clamp(32px,5.6vw,60px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
 					Everything your property team needs
 				</h2>
 
-				<p className="mx-auto mt-4 max-w-md text-[15px] leading-relaxed text-ink/60 sm:mt-5 sm:text-[16.5px]">
+				<p className="mx-auto mt-4 max-w-md text-base sm:text-lg leading-relaxed text-ink/60 sm:mt-5 sm:text-[16.5px]">
 					Comprehensive tools built for modern property management.
 				</p>
 

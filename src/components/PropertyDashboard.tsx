@@ -168,7 +168,7 @@ const IconCheck = () => (
 );
 
 const IconGooglePlay = () => (
-	<svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+	<svg viewBox="0 0 24 24" className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true">
 		{/* Left edge: blue-to-green gradient body of the triangle */}
 		<path
 			d="M4.1 2.65c-.4.32-.63.83-.63 1.5v15.7c0 .67.23 1.18.63 1.5L13 12 4.1 2.65Z"
@@ -193,7 +193,7 @@ const IconGooglePlay = () => (
 );
 
 const IconApple = () => (
-	<svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
+	<svg viewBox="0 0 24 24" className="h-5 w-5 sm:h-6 sm:w-6" aria-hidden="true">
 		<path
 			fill="currentColor"
 			d="M16.36 1.43c.1 1-.28 1.98-.87 2.7-.6.73-1.6 1.3-2.58 1.22-.11-.98.32-1.99.9-2.68.62-.75 1.68-1.3 2.55-1.24Zm2.6 17.1c-.53 1.2-.78 1.73-1.46 2.79-.95 1.47-2.29 3.3-3.95 3.31-1.47.02-1.85-.96-3.84-.95-2 .01-2.41.97-3.88.95-1.66-.02-2.93-1.67-3.88-3.13-2.66-4.07-2.94-8.85-1.3-11.39C1.79 8.2 3.42 7.16 5.14 7.13c1.6-.03 2.61 1.08 3.94 1.08 1.32 0 2.09-1.08 3.94-1.05 1.13.02 3 .43 4.24 2.29-.11.07-2.53 1.48-2.5 4.41.03 3.51 3.1 4.68 3.2 4.67Z"
@@ -251,17 +251,17 @@ const PropertyDashboardHero: React.FC = () => {
 			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-[1fr_auto_1fr] lg:gap-10 xl:gap-14">
 				{/* ---------------------------- Left column ---------------------------- */}
 				<div className="animate-guri-rise order-1 max-w-xl text-left">
-					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[9px] sm:text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
+					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
 						<span className="h-1.5 w-1.5 rounded-full bg-[#1dd1a1]" />
 						Property dashboard preview
 					</span>
 
-					<h1 className="font-sans max-w-4xl text-[clamp(28px,5.6vw,60px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
+					<h1 className="font-sans max-w-4xl text-[clamp(32px,5.6vw,60px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
 						Everything your <span className="text-teal-600">property team</span>{" "}
 						needs, in one place.
 					</h1>
 
-					<p className="mt-5 max-w-md text-[15px] sm:text-[16px] leading-relaxed text-ink/60">
+					<p className="mt-5 max-w-md text-base sm:text-lg leading-relaxed text-ink/60">
 						Track units, tenants, properties, leases, finance, and occupancy
 						from one simple dashboard.
 					</p>
@@ -335,30 +335,34 @@ const PropertyDashboardHero: React.FC = () => {
 						<a
 							href="#"
 							aria-label="Get it on Google Play"
-							className="max-sm:w-full inline-flex items-center justify-center gap-2.5 rounded-xl bg-[#171512] px-4 py-2.5 text-white shadow-play transition-all duration-260 ease-guri hover:-translate-y-0.5 hover:bg-[#050403] hover:shadow-play-hover active:translate-y-0"
+							className="inline-flex items-center justify-center gap-1.5 sm:gap-2.5 rounded-xl bg-[#171512] px-2 sm:px-4 py-2.5 text-white shadow-play transition-all duration-260 ease-guri hover:-translate-y-0.5 hover:bg-[#050403] hover:shadow-play-hover active:translate-y-0"
 						>
 							<span className="rounded bg-white/95 p-0.5">
 								<IconGooglePlay />
 							</span>
 							<span className="flex flex-col leading-tight">
-								<span className="text-[10px] font-medium tracking-wide text-white/70">
+								<span className="text-[8px] sm:text-[10px] font-medium tracking-wide text-white/70 uppercase">
 									GET IT ON
 								</span>
-								<span className="text-[15px] font-semibold">Google Play</span>
+								<span className="text-sm sm:text-[15px] font-semibold">
+									Google Play
+								</span>
 							</span>
 						</a>
 
 						<a
 							href="#"
 							aria-label="Download on the App Store"
-							className="max-sm:w-full inline-flex items-center justify-center gap-2.5 rounded-xl bg-[#171512] px-4 py-2.5 text-white shadow-play transition-all duration-260 ease-guri hover:-translate-y-0.5 hover:bg-[#050403] hover:shadow-play-hover active:translate-y-0"
+							className="inline-flex items-center justify-center gap-1.5 sm:gap-2.5 rounded-xl bg-[#171512] px-2 sm:px-4 py-2.5 text-white shadow-play transition-all duration-260 ease-guri hover:-translate-y-0.5 hover:bg-[#050403] hover:shadow-play-hover active:translate-y-0"
 						>
 							<IconApple />
 							<span className="flex flex-col leading-tight">
-								<span className="text-[10px] font-medium tracking-wide text-white/70">
+								<span className="text-[8px] sm:text-[10px] font-medium tracking-wide text-white/70 uppercase">
 									Download on the
 								</span>
-								<span className="text-[15px] font-semibold">App Store</span>
+								<span className="text-sm sm:text-[15px] font-semibold">
+									App Store
+								</span>
 							</span>
 						</a>
 					</div>

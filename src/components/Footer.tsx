@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { MapPin, Phone, Mail, Home, type LucideIcon } from "lucide-react";
 import FooterBg from "../assets/images/footerbg.png";
+import CTA from "./ui/CTA";
 
 const quickLinksPrimary = ["Product", "Features", "Partners", "Pricing", "FAQ"];
 const legalLinks = [
@@ -171,6 +172,8 @@ export default function Footer() {
 			className="relative w-full overflow-hidden rounded-t-[clamp(28px,8.5vw,170px)] bg-[#101615] text-white"
 			style={sectionBackground}
 		>
+			<CTA />
+
 			{/* =============================== FOOTER =============================== */}
 			<footer className="relative mt-4 lg:mt-10">
 				{/* Ambient building photo — fades from transparent at the top into the
@@ -315,8 +318,8 @@ export default function Footer() {
 							</div>
 						</div>
 
-						<hr className="mt-14 border-white/15 lg:mt-16" />
-						<p className="py-4 sm:py-6 text-center text-sm text-white/50">
+						<hr className="mt-8 sm:mt-14 border-white/15 lg:mt-16" />
+						<p className="py-2 sm:py-6 text-center text-sm text-white/50">
 							© {new Date().getFullYear()} Guri. All rights reserved.
 						</p>
 					</div>

@@ -38,11 +38,11 @@ const audienceCards: AudienceCard[] = [
 const CTA = () => {
 	return (
 		//  ================================ CTA ================================
-		<div className="relative z-10 mx-auto max-w-6xl px-6 pb-16 pt-20 sm:px-10 sm:pt-24 lg:px-16 lg:pb-20 lg:pt-30">
-			<h2 className="animate-guri-rise mx-auto max-w-3xl text-center font-serif text-[clamp(28px,5.6vw,60px)] font-normal leading-[1.12] text-white">
+		<div className="relative z-10 mx-auto max-w-6xl px-6 pb-4 sm:pb-8 pt-18 sm:px-10 sm:pt-20 lg:px-12 lg:pb-20 lg:pt-24">
+			<h2 className="animate-guri-rise mx-auto max-w-3xl text-center font-serif text-[clamp(32px,5.6vw,60px)] font-normal leading-[1.12] text-white">
 				Ready to streamline your property management?
 			</h2>
-			<p className="animate-guri-rise-delayed mx-auto mt-5 max-w-xl text-center text-white/70 text-[15px] sm:text-[16px] ">
+			<p className="animate-guri-rise-delayed mx-auto mt-5 max-w-xl text-center text-white/70 text-base sm:text-lg sm:text-[16px] ">
 				Move your portfolio into one clean operating system.
 			</p>
 
@@ -63,17 +63,17 @@ const CTA = () => {
 								/>
 							</div>
 
-							<p className="mt-4 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
+							<p className="mt-2 sm:mt-4 text-[9px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
 								{card.eyebrow}
 							</p>
-							<h3 className="mt-3 text-xl font-semibold text-white sm:text-2xl">
+							<h3 className="mt-1.5 sm:mt-3 text-[19px] font-semibold text-white sm:text-2xl">
 								{card.title}
 							</h3>
-							<p className="mt-3 max-w-sm text-sm sm:text-base leading-relaxed text-white/65">
+							<p className="mt-1 sm:mt-3 max-w-sm text-[13px] sm:text-base leading-relaxed text-white/65">
 								{card.description}
 							</p>
 
-							<div className="mt-6">
+							<div className="mt-4 sm:mt-6">
 								{isSolid ? (
 									<JoinButton size="md" />
 								) : (

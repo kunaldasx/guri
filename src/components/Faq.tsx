@@ -87,18 +87,18 @@ const FaqSection: React.FC = () => {
 			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-16">
 				{/* ------------------------------ Left column ------------------------------ */}
 				<div className="animate-guri-rise max-w-md">
-					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[9px] sm:text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
+					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
 						<span className="h-1.5 w-1.5 rounded-full bg-[#1dd1a1]" />
 						FAQs
 					</span>
 
-					<h2 className="font-sans max-w-4xl text-[clamp(28px,5.6vw,50px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
+					<h2 className="font-sans max-w-4xl text-[clamp(32px,5.6vw,60px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
 						Frequently asked
 						<br />
 						<span className="text-teal-700">questions.</span>
 					</h2>
 
-					<p className="mt-5 max-w-sm text-[15px] sm:text-[16.5px] leading-relaxed text-ink/60">
+					<p className="mt-5 max-w-sm text-base sm:text-lg leading-relaxed text-ink/60">
 						Have something else on your mind? Email us at{" "}
 						<a
 							href="mailto:support@guri.liamsi.app"

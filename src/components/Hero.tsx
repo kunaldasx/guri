@@ -96,12 +96,12 @@ export default function Hero() {
 				className="pointer-events-none absolute left-1/2 -top-35 z-0 h-120 w-225 -translate-x-1/2 bg-[radial-gradient(closest-side,rgba(169,212,195,0.45),rgba(169,212,195,0)_72%)]"
 			/>
 			<div className="relative z-10 flex flex-col items-center animate-guri-rise">
-				<span className="mb-[26px] inline-flex items-center gap-2 rounded-full bg-mint-200 px-4 py-[7px] text-[9px] sm:text-xs font-bold uppercase tracking-[0.06em] text-teal-700">
+				<span className="mb-[26px] inline-flex items-center gap-2 rounded-full bg-mint-200 px-2 sm:px-4 py-[7px] text-[10px] sm:text-xs font-bold uppercase tracking-[0.06em] text-teal-700">
 					<span className="h-1.5 w-1.5 rounded-full bg-[#3fae7a] shadow-[0_0_0_3px_rgba(63,174,122,0.25)]" />
 					Built for African property managers
 				</span>
 
-				<h1 className="mb-[22px] max-w-4xl text-[clamp(28px,5.6vw,60px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
+				<h1 className="mb-[22px] max-w-4xl text-[clamp(32px,5.6vw,60px)] font-medium leading-[1.08] tracking-[-0.02em] text-[#16130f]">
 					Property Management Without
 					<br />
 					<span className="text-teal-600">Operational Chaos</span>
@@ -130,7 +130,7 @@ export default function Hero() {
 					{[...LOGOS, ...LOGOS].map((logo, i) => (
 						<div
 							key={`${logo.name}-${i}`}
-							className="flex h-8 w-auto shrink-0 items-center justify-center md:h-9"
+							className="flex h-6 sm:h-7 w-auto shrink-0 items-center justify-center md:h-9"
 						>
 							<img
 								src={logo.src}

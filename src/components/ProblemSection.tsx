@@ -46,19 +46,19 @@ const ProblemSection: React.FC = () => {
 				<div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[0.98fr_1.02fr] lg:gap-12 xl:gap-[72px]">
 					{/* Left column */}
 					<div className="animate-guri-rise">
-						<span className="inline-flex items-center gap-2 rounded-full bg-mint-200 px-4 py-1.5 text-[9px] font-semibold uppercase tracking-[0.09em] text-teal-700 sm:text-xs">
+						<span className="inline-flex items-center gap-2 rounded-full bg-mint-200 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.09em] text-teal-700 sm:text-xs">
 							<span className="h-1.5 w-1.5 rounded-full bg-[#70e261]" />
 							The Problem
 						</span>
 
-						<h2 className="my-6 max-w-[600px] text-[clamp(28px,5.6vw,52px)] font-medium leading-[1.08] tracking-[-0.025em] text-[#16130f]">
+						<h2 className="my-6 max-w-[600px] text-[clamp(32px,5.6vw,60px)] font-medium leading-[1.08] tracking-[-0.025em] text-[#16130f]">
 							Property Management is still mostly{" "}
 							<span className="block text-teal-500">
 								spreadsheets, paper &amp; Whatsapp.
 							</span>
 						</h2>
 
-						<p className="max-w-[600px] text-[15px] leading-[1.55] text-ink/68 sm:text-[16px]">
+						<p className="max-w-[600px] text-base sm:text-lg leading-[1.55] text-ink/68 sm:text-[16px]">
 							African property managers juggle scattered records and lose money
 							to missed rent and operational chaos. Guri replaces the mess with
 							one clean dashboard.
