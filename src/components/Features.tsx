@@ -1,4 +1,4 @@
-import { ClipboardList, Users, ShieldCheck } from "lucide-react";
+import { Users, ShieldCheck, Building2 } from "lucide-react";
 
 interface Feature {
 	icon: React.ElementType;
@@ -8,7 +8,7 @@ interface Feature {
 
 const features: Feature[] = [
 	{
-		icon: ClipboardList,
+		icon: Building2,
 		title: "Multi-Property Management",
 		description:
 			"Manage units, tenants, leases, and rent from one property workspace.",
@@ -31,7 +31,7 @@ const FeaturesSection: React.FC = () => {
 		<section className="py-16 sm:py-18 lg:py-20">
 			<div className="mx-auto max-w-5xl px-6 text-center sm:px-8 lg:px-10">
 				<span className="inline-flex items-center gap-2 rounded-full bg-mint-200 px-4 py-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.09em] text-teal-700">
-					<span className="h-1.5 w-1.5 rounded-full bg-[#70e261]" />
+					<span className="h-1.5 w-1.5 rounded-full bg-[#3fae7a] shadow-[0_0_0_3px_rgba(63,174,122,0.25)]" />
 					Features
 				</span>
 
@@ -51,7 +51,7 @@ const FeaturesSection: React.FC = () => {
 										hover:shadow-[0_18px_40px_-24px_rgba(16,24,38,0.25)]"
 							style={{ animationDelay: `${i * 60}ms` }}
 						>
-							<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-stat-gradient transition-transform duration-300 ease-guri group-hover:opacity-80">
+							<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-icon-gradient transition-transform duration-300 ease-guri group-hover:opacity-80">
 								<Icon className="h-5 w-5 text-mint-200" strokeWidth={2} />
 							</div>
 

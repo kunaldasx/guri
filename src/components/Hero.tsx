@@ -12,7 +12,7 @@ import {
 	Stripe,
 } from "../assets/brand-logos";
 import { VideoContainer } from "./ui/VideoContainer";
-import { Building2, NotebookText, Shield } from "lucide-react";
+import { Building2, ShieldCheck, Smartphone } from "lucide-react";
 
 const LOGOS = [
 	{
@@ -51,8 +51,8 @@ const LOGOS = [
 
 const FEATURE_PILLS = [
 	{ label: "Unit tracking", icon: Building2 },
-	{ label: "Tenant records", icon: NotebookText },
-	{ label: "Rent reminders", icon: Shield },
+	{ label: "Tenant records", icon: Smartphone },
+	{ label: "Rent reminders", icon: ShieldCheck },
 ];
 
 const STATS = [

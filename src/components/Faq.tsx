@@ -88,7 +88,7 @@ const FaqSection: React.FC = () => {
 				{/* ------------------------------ Left column ------------------------------ */}
 				<div className="animate-guri-rise max-w-md">
 					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
-						<span className="h-1.5 w-1.5 rounded-full bg-[#1dd1a1]" />
+						<span className="h-1.5 w-1.5 rounded-full bg-[#3fae7a] shadow-[0_0_0_3px_rgba(63,174,122,0.25)]" />
 						FAQs
 					</span>
 

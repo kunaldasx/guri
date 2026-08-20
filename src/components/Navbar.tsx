@@ -97,7 +97,7 @@ export default function Navbar() {
 						<li key={label}>
 							<a
 								href={`#${label.toLowerCase()}`}
-								className="inline-block rounded-full px-3.5 py-2 text-sm font-medium text-ink/72 transition-all duration-200 hover:bg-white/15 hover:text-ink hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]"
+								className="inline-block rounded-full px-3.5 py-2 text-sm font-medium text-ink/72 transition-all duration-200 hover:bg-white/25 hover:text-ink hover:shadow-[0_4px_14px_rgba(16,24,38,0.10),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.08)]"
 							>
 								{label}
 							</a>
@@ -117,7 +117,7 @@ export default function Navbar() {
 					aria-label={mobileOpen ? "Close menu" : "Toggle menu"}
 					aria-expanded={mobileOpen}
 					onClick={() => setMobileOpen((v) => !v)}
-					className="relative z-10 flex h-9.5 w-9.5 items-center justify-center rounded-full border border-white/20 bg-white/[0.06] shadow-[inset_0_1px_0_rgba(255,255,255,0.3)] backdrop-blur-md min-[940px]:hidden"
+					className="block rounded-xl px-2.5 py-2.75 text-[15px] font-medium text-ink no-underline transition-all duration-200 hover:bg-white/22 hover:shadow-[0_4px_14px_rgba(16,24,38,0.08),inset_0_1px_0_rgba(255,255,255,0.45),inset_0_-1px_0_rgba(255,255,255,0.08)] min-[940px]:hidden"
 				>
 					<span className="flex w-4.5 flex-col gap-1">
 						<span

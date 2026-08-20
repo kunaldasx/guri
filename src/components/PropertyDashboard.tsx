@@ -1,3 +1,12 @@
+import {
+	Building2,
+	CheckCircle2,
+	FileText,
+	LayoutDashboard,
+	Users,
+	Wallet,
+	type LucideIcon,
+} from "lucide-react";
 import Phone from "../assets/images/phone.png";
 
 /**
@@ -13,159 +22,12 @@ import Phone from "../assets/images/phone.png";
 
 type NavItem = {
 	label: string;
-	icon: React.ReactNode;
+	icon: LucideIcon;
 };
 
 type FeatureItem = {
 	label: string;
 };
-
-/* --------------------------------- Icons -------------------------------- */
-/* Small, inline icon set (stroke-based, currentColor) so no external icon
-   package is required. Kept intentionally minimal / geometric to match the
-   dashboard's own iconography. */
-
-const IconDashboard = () => (
-	<svg viewBox="0 0 24 24" fill="none" className="h-4 w-4" aria-hidden="true">
-		<rect x="3" y="3" width="7" height="7" rx="1.5" fill="currentColor" />
-		<rect
-			x="14"
-			y="3"
-			width="7"
-			height="7"
-			rx="1.5"
-			fill="currentColor"
-			opacity="0.55"
-		/>
-		<rect
-			x="3"
-			y="14"
-			width="7"
-			height="7"
-			rx="1.5"
-			fill="currentColor"
-			opacity="0.55"
-		/>
-		<rect
-			x="14"
-			y="14"
-			width="7"
-			height="7"
-			rx="1.5"
-			fill="currentColor"
-			opacity="0.3"
-		/>
-	</svg>
-);
-
-const IconBuilding = () => (
-	<svg viewBox="0 0 24 24" fill="none" className="h-4 w-4" aria-hidden="true">
-		<path
-			d="M4 21V5.5C4 4.67 4.67 4 5.5 4h7c.83 0 1.5.67 1.5 1.5V21"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-		/>
-		<path
-			d="M14 10.5h4.5c.83 0 1.5.67 1.5 1.5v9"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-		/>
-		<path
-			d="M2.5 21h19"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinecap="round"
-		/>
-		<path
-			d="M7 8h1.5M7 11.5h1.5M7 15h1.5"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinecap="round"
-		/>
-	</svg>
-);
-
-const IconUsers = () => (
-	<svg viewBox="0 0 24 24" fill="none" className="h-4 w-4" aria-hidden="true">
-		<circle cx="8.5" cy="8" r="3" stroke="currentColor" strokeWidth="1.7" />
-		<path
-			d="M2.75 19c.6-3.2 3.1-5 5.75-5s5.15 1.8 5.75 5"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinecap="round"
-		/>
-		<path
-			d="M15.5 5.3c1.4.3 2.5 1.5 2.5 3s-1.1 2.7-2.5 3"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinecap="round"
-		/>
-		<path
-			d="M15 14.2c2.15.35 3.9 1.9 4.35 4.8"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinecap="round"
-		/>
-	</svg>
-);
-
-const IconDocument = () => (
-	<svg viewBox="0 0 24 24" fill="none" className="h-4 w-4" aria-hidden="true">
-		<path
-			d="M6.5 3.5h7.6L18 8v11.5c0 .55-.45 1-1 1H6.5c-.55 0-1-.45-1-1v-15c0-.55.45-1 1-1Z"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinejoin="round"
-		/>
-		<path
-			d="M14 3.5V8h4.2"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinejoin="round"
-		/>
-		<path
-			d="M8 12.5h7M8 15.5h7M8 18.2h4.5"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinecap="round"
-		/>
-	</svg>
-);
-
-const IconWallet = () => (
-	<svg viewBox="0 0 24 24" fill="none" className="h-4 w-4" aria-hidden="true">
-		<path
-			d="M3 7.2c0-.94.76-1.7 1.7-1.7h13.6c.94 0 1.7.76 1.7 1.7v9.6c0 .94-.76 1.7-1.7 1.7H4.7c-.94 0-1.7-.76-1.7-1.7V7.2Z"
-			stroke="currentColor"
-			strokeWidth="1.7"
-			strokeLinejoin="round"
-		/>
-		<path d="M3.4 9.5h17.2" stroke="currentColor" strokeWidth="1.7" />
-		<circle cx="16.4" cy="13.6" r="1.35" fill="currentColor" />
-	</svg>
-);
-
-const IconCheck = () => (
-	<svg
-		viewBox="0 0 24 24"
-		fill="none"
-		className="h-[18px] w-[18px] shrink-0"
-		aria-hidden="true"
-	>
-		<circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.6" />
-		<path
-			d="M8 12.3l2.6 2.6 5.4-5.6"
-			stroke="currentColor"
-			strokeWidth="1.8"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-		/>
-	</svg>
-);
 
 const IconGooglePlay = () => (
 	<svg viewBox="0 0 24 24" className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true">
@@ -204,11 +66,11 @@ const IconApple = () => (
 /* --------------------------------- Data --------------------------------- */
 
 const NAV_ITEMS: NavItem[] = [
-	{ label: "Dashboard", icon: <IconDashboard /> },
-	{ label: "Properties", icon: <IconBuilding /> },
-	{ label: "Tenants", icon: <IconUsers /> },
-	{ label: "Leases", icon: <IconDocument /> },
-	{ label: "Finance", icon: <IconWallet /> },
+	{ label: "Dashboard", icon: LayoutDashboard },
+	{ label: "Properties", icon: Building2 },
+	{ label: "Tenants", icon: Users },
+	{ label: "Leases", icon: FileText },
+	{ label: "Finance", icon: Wallet },
 ];
 
 const FEATURES: FeatureItem[] = [
@@ -252,7 +114,7 @@ const PropertyDashboardHero: React.FC = () => {
 				{/* ---------------------------- Left column ---------------------------- */}
 				<div className="animate-guri-rise order-1 max-w-xl text-left">
 					<span className="mb-6 inline-flex items-center gap-2 rounded-full bg-mint-200/70 px-4 py-1.5 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-inset ring-teal-500/15">
-						<span className="h-1.5 w-1.5 rounded-full bg-[#1dd1a1]" />
+						<span className="h-1.5 w-1.5 rounded-full bg-[#3fae7a] shadow-[0_0_0_3px_rgba(63,174,122,0.25)]" />
 						Property dashboard preview
 					</span>
 
@@ -306,10 +168,10 @@ const PropertyDashboardHero: React.FC = () => {
 									"inline-flex cursor-pointer items-center gap-1.5 rounded-full px-4 py-2 text-xs sm:text-sm font-medium transition-all duration-[260ms] ease-guri",
 									i === 0
 										? "bg-[#171512] text-white shadow-[0_8px_18px_rgba(16,24,38,0.22)] hover:-translate-y-0.5 hover:shadow-[0_12px_22px_rgba(16,24,38,0.28)]"
-										: "bg-mint-200/50 text-ink/70 hover:-translate-y-0.5 hover:bg-mint-200/75 hover:text-ink",
+										: "bg-mint-200/90 text-ink/70 hover:-translate-y-0.5 hover:bg-mint-200/95 hover:text-ink",
 								].join(" ")}
 							>
-								{item.icon}
+								<item.icon className="h-4 w-4 sm:h-4 sm:w-4" />
 								{item.label}
 							</span>
 						))}
@@ -323,7 +185,7 @@ const PropertyDashboardHero: React.FC = () => {
 								className="group flex items-center gap-2 transition-colors duration-200 ease-guri hover:text-ink"
 							>
 								<span className="text-[#1dd1a1] transition-transform duration-200 ease-guri group-hover:scale-110">
-									<IconCheck />
+									<CheckCircle2 />
 								</span>
 								{feature.label}
 							</li>

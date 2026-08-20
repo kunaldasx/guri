@@ -47,7 +47,7 @@ const ProblemSection: React.FC = () => {
 					{/* Left column */}
 					<div className="animate-guri-rise">
 						<span className="inline-flex items-center gap-2 rounded-full bg-mint-200 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.09em] text-teal-700 sm:text-xs">
-							<span className="h-1.5 w-1.5 rounded-full bg-[#70e261]" />
+							<span className="h-1.5 w-1.5 rounded-full bg-[#3fae7a] shadow-[0_0_0_3px_rgba(63,174,122,0.25)]" />
 							The Problem
 						</span>
 
@@ -96,7 +96,7 @@ const ProblemSection: React.FC = () => {
 											items-center
 											justify-center
 											rounded-[14px]
-											bg-stat-gradient
+											bg-icon-gradient
 											transition-all
 											duration-300
 											ease-guri
