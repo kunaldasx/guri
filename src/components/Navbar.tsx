@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import Logo from "../assets/images/logo2.png";
+import Logo from "../assets/images/logo.png";
 import { JoinButton } from "./ui/JoinBtn";
 import { PartnerButton } from "./ui/PartnerBtn";
 

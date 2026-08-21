@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { MapPin, Phone, Mail, Home, type LucideIcon } from "lucide-react";
+import { MapPin, Phone, Mail, type LucideIcon } from "lucide-react";
 import FooterBg from "../assets/images/footerbg.png";
+import Logo from "../assets/images/logo-white.png";
 import CTA from "./ui/CTA";
 
 const quickLinksPrimary = ["Product", "Features", "Partners", "Pricing", "FAQ"];
@@ -103,54 +104,6 @@ const sectionBackground: React.CSSProperties = {
 		"linear-gradient(to right, #101615 0%, #131f1e 28%, #142623 48%, #153430 64%, #143d39 78%, #144843 90%, #17544a 100%)",
 };
 
-function LogoMark() {
-	const spokeCount = 16;
-	const spokes = Array.from({ length: spokeCount });
-
-	return (
-		<span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full sm:h-12 sm:w-12">
-			<svg
-				viewBox="0 0 48 48"
-				className="absolute inset-0 h-full w-full"
-				fill="none"
-				aria-hidden="true"
-			>
-				<circle
-					cx="24"
-					cy="24"
-					r="22"
-					stroke="white"
-					strokeOpacity="0.85"
-					strokeWidth="1"
-				/>
-				{spokes.map((_, i) => {
-					const angle = (i / spokeCount) * Math.PI * 2;
-					const x1 = 24 + 19 * Math.cos(angle);
-					const y1 = 24 + 19 * Math.sin(angle);
-					const x2 = 24 + 22.5 * Math.cos(angle);
-					const y2 = 24 + 22.5 * Math.sin(angle);
-					return (
-						<line
-							key={i}
-							x1={x1}
-							y1={y1}
-							x2={x2}
-							y2={y2}
-							stroke="white"
-							strokeWidth="1.3"
-							strokeLinecap="round"
-						/>
-					);
-				})}
-			</svg>
-			<Home
-				className="h-4 w-4 text-white sm:h-[18px] sm:w-[18px]"
-				strokeWidth={1.5}
-			/>
-		</span>
-	);
-}
-
 /* -------------------------------------------------------------------------- */
 /*  Section                                                                    */
 /* -------------------------------------------------------------------------- */
@@ -194,7 +147,11 @@ export default function Footer() {
 							{/* Brand + about */}
 							<div className="col-span-2 sm:col-span-1 lg:col-span-4">
 								<a href="#" className="inline-flex items-center gap-3">
-									<LogoMark />
+									<img
+										src={Logo}
+										alt="logo"
+										className="size-10 sm:size-12 object-contain"
+									/>
 									<span className="font-serif text-3xl text-white">Guri</span>
 								</a>
 								<p className="mt-6 max-w-sm text-sm leading-relaxed text-white/60">
